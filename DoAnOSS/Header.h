@@ -9,3 +9,5 @@ using namespace std;
 
 void ReadData();
 void PrintData();
+void Euler();
+int Check(int);
