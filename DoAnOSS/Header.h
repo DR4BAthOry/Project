@@ -13,4 +13,5 @@ void PrintData2();
 void Euler(int);
 int Check(int);
 void checkDataInput();
+void runAgain();
 
