@@ -9,3 +9,4 @@ using namespace std;
 
 void ReadData();
 void PrintData();
+void PrintData2();

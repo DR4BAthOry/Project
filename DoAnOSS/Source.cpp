@@ -47,3 +47,15 @@ void ReadData()
                 S[i][j] = TRUE;
             }
 }
+
+void PrintData2()
+{
+    int i, j;
+    printf("\nMa Tran Ke S[%d*%d]:\n", N, N);
+    for (i = 1; i <= N; i++)
+    {
+        for (j = 1; j <= N; j++)
+            printf("%4d", S[i][j]);
+        printf("\n");
+    }
+}
