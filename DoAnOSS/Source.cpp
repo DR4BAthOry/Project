@@ -130,3 +130,31 @@ void checkDataInput() {
     }
     Euler(n);
 }
+
+void runAgain() {
+    int a;
+    do
+    {
+        printf("\nBan co muon tiep tuc hay khong?");
+        printf("\nChon 1 neu muon, chon 0 de thoat");
+        scanf("%d", &a);
+        if (a == 1)
+        {
+            for (int i = 1; i <= N; i++)
+
+                for (int j = 1; j <= N; j++)
+
+                    if (G[i][j] > 0)
+                    {
+                        S[i][j] = TRUE;
+                    }
+            l = 0;
+            PrintData();
+            checkDataInput();
+        }
+        else
+        {
+            return;
+        }
+    } while (true);
+}

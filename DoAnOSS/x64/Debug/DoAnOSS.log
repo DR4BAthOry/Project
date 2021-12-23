@@ -1,2 +1,5 @@
-﻿  Source.cpp
-  DoAnOSS.vcxproj -> C:\Users\dsang\Desktop\Project\x64\Debug\DoAnOSS.exe
+﻿  Main.cpp
+C:\Users\Setup\Desktop\Project\DoAnOSS\Main.cpp(3,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+  Source.cpp
+  Generating Code...
+  DoAnOSS.vcxproj -> C:\Users\Setup\Desktop\Project\x64\Debug\DoAnOSS.exe
