@@ -122,7 +122,7 @@ void checkDataInput() {
     int n;
     printf("\nNhap diem bat dau: ");
     scanf("%d", &n);
-    while (n > N)
+    while (n > N || n <= 0)
     {
         cout << "Nhap sai!" << endl;
         printf("\nNhap diem bat dau (lon hon 0 va nho hon %d): ", N);
