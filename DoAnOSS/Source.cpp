@@ -22,7 +22,7 @@ void PrintData() {
 void ReadData()
 {
     int i, j;
-    FILE* f = fopen("DoAnOSS/MT1.txt", "rt");
+    FILE* f = fopen("./MT1.txt", "rt");
     if (f == NULL)
     {
         printf("\nError Loading File!\n");
