@@ -3,6 +3,6 @@ void main()
 {  
     ReadData();
     PrintData();
-    Euler();
+    checkDataInput();
     system("pause");
 }
