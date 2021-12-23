@@ -61,35 +61,28 @@ void PrintData2()
         printf("\n");
     }
 }
-void Euler()
+void Euler(int n)
 {
-    int n, k, ok;
-    printf("\nNhap diem bat dau: ");
-    scanf("%d", &n);
-    if (n > N)
-        cout << "Nhap sai ";
-    else
+    int k, ok;
+    for (k = 1; k <= N; k++)
     {
-        for (k = 1; k <= N; k++)
+        if ((S[n][k] != 0))
+            // co duong noi diem n voi diem k
         {
-            if ((S[n][k] != 0))
-                // co duong noi diem n voi diem k
+            S[n][k] = FALSE;
+            ok = Check(k);
+            if (ok == FALSE)
             {
-                S[n][k] = FALSE;
-                ok = Check(k);
-                if (ok == FALSE)
-                {
-                    S[n][k] = TRUE;
-                }
-                else // ok==TRUE
-                {
-                    printf("Duong di la: ");
-                    printf("%d %d ", n, k);
-                    for (int r = l - 1; r >= 0; r--)
-                        cout << path[r] << " ";
-                    cout << endl;
-                    return;
-                }
+                S[n][k] = TRUE;
+            }
+            else // ok==TRUE
+            {
+                printf("Duong di la: ");
+                printf("%d %d ", n, k);
+                for (int r = l - 1; r >= 0; r--)
+                    cout << path[r] << " ";
+                cout << endl;
+                return;
             }
         }
     }
@@ -124,4 +117,16 @@ int Check(int k)
                 return FALSE;
     return TRUE;
 
+}
+void checkDataInput() {
+    int n;
+    printf("\nNhap diem bat dau: ");
+    scanf("%d", &n);
+    while (n > N)
+    {
+        cout << "Nhap sai!" << endl;
+        printf("\nNhap diem bat dau (lon hon 0 va nho hon %d): ", N);
+        scanf("%d", &n);
+    }
+    Euler(n);
 }

@@ -10,6 +10,7 @@ using namespace std;
 void ReadData();
 void PrintData();
 void PrintData2();
-void Euler();
+void Euler(int);
 int Check(int);
+void checkDataInput();
 
